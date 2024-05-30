@@ -1,0 +1,212 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(206, 229, 250);
+    color: #191b16;
+}
+
+header {
+    background-color: #545a48;
+    color: rgb(206, 229, 250);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+main div {
+    margin-bottom: 20px;
+}
+
+main h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+main a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.DAO {
+    width: 800px;
+    margin: 20px;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #333;
+}
+
+footer {
+    background-color: #545a48;
+    color: rgb(206, 229, 250);
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: rgb(206, 229, 250);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.student{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.key{
+
+}
+.key__p{
+    font-size: 20px;
+    color: #5e81ff;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    padding: 10px;
+    margin: 5px;
+    background: rgb(63, 75, 117);
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 10px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .skill {
+        flex: 1 1 100%;
+    }
+}
+
+.photo {
+    width: 350px;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+.project a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.project-image:hover img {
+    filter: blur(5px);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-image:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
